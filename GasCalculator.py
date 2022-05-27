@@ -4,6 +4,7 @@
 
 from os import system, name
 
+#This will only work for a Linux machine.  Find proper code to run on a Windows machine.
 def clear():
     _ = system('clear')
 clear()
@@ -19,6 +20,7 @@ def main():
     clear()
     while (not quit):
         print ('Number of entries: ', (entries))
+        #Find a better way to clean this up.
         MD = float(input('\nEnter miles driven: '))
         MPG = float(input('Enter MPG: '))
         PoG = float(input('Enter the current price of gas: '))          
